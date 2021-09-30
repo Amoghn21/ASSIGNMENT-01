@@ -6,7 +6,7 @@ int main()
    int x,count=0;
    for(int i=0;num[i]!='\0';i++)
    {  if(num[i]=='.') 
-      count=1;
+      count++;
    }
    if(count!=1)
    printf("invalid");
