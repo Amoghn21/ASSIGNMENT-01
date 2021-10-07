@@ -1,3 +1,4 @@
+//2012143-Q.1
 #include<stdio.h>
 int main()
 {  char num[500];
