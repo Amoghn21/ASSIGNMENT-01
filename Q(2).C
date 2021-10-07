@@ -1,3 +1,4 @@
+//2012143 _Q.2
 #include<stdio.h>
 int main()
 { char email[320];
