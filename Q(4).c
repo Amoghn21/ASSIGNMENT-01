@@ -88,7 +88,7 @@ return 0;
 #include<time.h>
 #include<stdlib.h>
 void selection_sort(long long int a[],long long int n)
-{
+{   
     for(int i=0;i<n-1;i++)
     {
         for(int j=i+1;j<n;j++)
@@ -109,9 +109,9 @@ void selection_sort(long long int a[],long long int n)
 }
 void bubble_sort(long long int a[],long long int n)
 {
-    int c=1;
+    int c=1,flag;
     while(c<n)
-    {
+    {  flag=0;
         for(int i=0;i<n-c;i++)
         {
             if(a[i]>a[i+1])
@@ -119,8 +119,11 @@ void bubble_sort(long long int a[],long long int n)
                 int temp=a[i];
                 a[i]=a[i+1];
                 a[i+1]=temp;
+                flag=1;
             }
         }
+        if(flag==0)
+        {break; }
         c++;
     }
     printf("Bubble Sorted Array:\n");
